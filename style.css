@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+    background-image: url(asset/bakcground\ spongebob.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    color: rgb(244, 23, 23);
+}
+
+.link-item {
+    width: 90%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+
+    color: yellow;
+    text-decoration: none;
+    background-color: rgb(19, 19, 19);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.link-item p {
+    margin-right: 60px;
+}
+
+.link-item:hover {
+    transition: cubic-bezier(.07, 1.41, .82, 1.41,) 0,2s;
+    transform: scale(1.20);
+
+    background-color: darkgray(72,66,66);
+}
